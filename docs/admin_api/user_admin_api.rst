@@ -168,11 +168,14 @@ with a body of:
 .. code:: json
 
    {
-       "new_password": "<secret>"
+       "new_password": "<secret>",
+       "logout_devices": true,
    }
 
 including an ``access_token`` of a server admin.
 
+The parameter ``new_password`` is required.
+The parameter ``logout_devices`` is optional and defaults to ``true``.
 
 Get whether a user is a server administrator or not
 ===================================================
